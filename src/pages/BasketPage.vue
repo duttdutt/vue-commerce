@@ -1,10 +1,13 @@
 <script setup lang="ts">
 import Heading from '@/shared/Heading.vue';
-import cartStore from '@/stores/cartStore.ts'
+import RouterNavigation from '@/shared/RouterNavigation.vue';
+import cartStore from '@/stores/cartStore.ts';
 </script>
 
 <template>
   <Heading>Basket Page</Heading>
+
+  <RouterNavigation />
 
   <div :class="$style.basket">
     <div v-if="cartStore.items.length === 0">
