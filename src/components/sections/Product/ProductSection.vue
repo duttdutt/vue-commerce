@@ -1,18 +1,9 @@
 <script setup lang="ts">
 import { cardItems } from '@/constants/cardItems.ts';
 import Card from '@/shared/Card/Card.vue';
-import Modal from '@/shared/Modal.vue';
 </script>
 
 <template>
-  <Modal
-    type="success"
-    header="Esse odio perspiciatis debitis ex beatae consequuntur sunt fugit."
-  >
-    Vitae aliquid rem nulla. Cumque ut porro quia omnis fugiat tempore nam dolor. Ullam consectetur voluptatibus eius
-    dolores fugit adipisci mollitia laboriosam. Laboriosam dolore ducimus atque dolor doloribus voluptatem. Velit
-    delectus necessitatibus. Dolorem quam adipisci deserunt.
-  </Modal>
   <section :class="$style.cardContainer">
     <Card
       v-for="card of cardItems"

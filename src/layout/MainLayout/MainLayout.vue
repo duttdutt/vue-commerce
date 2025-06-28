@@ -16,7 +16,8 @@ import Navbar from './Navbar/Navbar.vue';
 <style lang="scss" module>
 .mainLayoutWrapper {
   width: 100vw;
-  height: 100vh;
+  // height: 100vh;
+  min-height: 100vh;
 
   .main {
     display: flex;
